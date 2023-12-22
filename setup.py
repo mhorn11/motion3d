@@ -161,6 +161,6 @@ setup(
     ext_modules=ext_modules,
     install_requires=parse_requirements('requirements.txt'),
     extras_require={
-        'develop': parse_requirements('requirements.develop.txt')
+        'develop': parse_requirements('requirements.develop.txt'),
     },
 )

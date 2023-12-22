@@ -25,7 +25,7 @@ Furthermore, the `M3DWriter` and `M3DReader` can be used to store and load trans
 | CMake      | >= 3.14  |                   |
 | GCC        | >= 9.4   | C++17 is required |
 | Eigen      | >= 3.3   |                   |
-| Python     | >= 3.6   |                   |
+| Python     | >= 3.8   |                   |
 
 
 With Ubuntu 20.04, all dependencies can be installed using:
@@ -69,6 +69,6 @@ If Eigen is not found on the system, the setup downloads a suitable version loca
 
 ## Documentation
 
-Fore more information about the transformation types, definitions, and the usage in C++ and Python, see the documentation.
+Fore more information about the transformation types, definitions, and the usage in C++ and Python, see the documentation at [motion3d.readthedocs.io](https://motion3d.readthedocs.io).
 
-The `doc` directory provides a detailed readme on how to create the documentation directly from the repository.
+Furthermore, the `doc` directory provides a detailed readme on how to create the documentation directly from the repository.

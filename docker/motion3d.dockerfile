@@ -17,6 +17,9 @@ RUN apt update && apt install -q -y --no-install-recommends \
     python3 \
     python3-dev \
     python3-pip \
+    # documentation
+    doxygen \
+    graphviz \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
