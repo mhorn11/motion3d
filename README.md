@@ -69,6 +69,6 @@ If Eigen is not found on the system, the setup downloads a suitable version loca
 
 ## Documentation
 
-Fore more information about the transformation types, definitions, and the usage in C++ and Python, see the documentation at [motion3d.readthedocs.io](motion3d.readthedocs.io).
+Fore more information about the transformation types, definitions, and the usage in C++ and Python, see the documentation at [motion3d.readthedocs.io](https://motion3d.readthedocs.io).
 
 Furthermore, the `doc` directory provides a detailed readme on how to create the documentation directly from the repository.
