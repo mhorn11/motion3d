@@ -15,7 +15,7 @@ def exit_with_error(msg):
 
 
 # check C++ dependencies
-cpp_dependencies = ['doxygen', 'latex', 'make']
+cpp_dependencies = ['dot', 'doxygen', 'latex', 'make']
 for dependency in cpp_dependencies:
     if distutils.spawn.find_executable(dependency) is None:
         exit_with_error(f"Error: required dependency '{dependency}' not found.")
