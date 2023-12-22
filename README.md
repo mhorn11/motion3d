@@ -1,5 +1,7 @@
 # Motion3D
 
+[![Documentation Status](https://readthedocs.org/projects/motion3d/badge/?version=latest)](https://motion3d.readthedocs.io/en/latest/?badge=latest)
+
 A header-only C++ library with full Python bindings for handling, converting, and storing 3D motions and poses.
 
 It supports converting, chaining and applying transformations in many common representations:
