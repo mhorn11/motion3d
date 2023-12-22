@@ -23,4 +23,4 @@ sphinx:
 # Python requirements
 python:
   install:
-    - requirements: requirements.develop.txt
+    - requirements: requirements.rtd.txt
