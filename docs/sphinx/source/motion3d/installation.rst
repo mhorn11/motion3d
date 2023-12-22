@@ -10,7 +10,7 @@ Dependency  Version  Note
 CMake       >= 3.14
 GCC         >= 9.4   C++17 is required
 Eigen       >= 3.3
-Python      >= 3.6
+Python      >= 3.8
 ==========  =======  =================
 
 With Ubuntu 20.04, all dependencies can be installed using:
