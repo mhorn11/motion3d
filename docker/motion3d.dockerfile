@@ -7,6 +7,7 @@ RUN apt update && apt install -q -y --no-install-recommends \
     # system
     gnupg2 \
     wget \
+    zsh \
     # libraries
     libeigen3-dev \
     # cpp
