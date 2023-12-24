@@ -4,16 +4,20 @@ Installation
 Requirements
 ------------
 
-==========  =======  =================
+Supported operating systems:
+ * Ubuntu 20.04
+ * Ubuntu 22.04
+
+==========  =======  =====================================
 Dependency  Version  Note
-==========  =======  =================
+==========  =======  =====================================
 CMake       >= 3.14
 GCC         >= 9.4   C++17 is required
 Eigen       >= 3.3
-Python      >= 3.8
-==========  =======  =================
+Python      >= 3.8   Tests are run for 3.8, 3.10, and 3.12
+==========  =======  =====================================
 
-With Ubuntu 20.04, all dependencies can be installed using:
+All dependencies can be installed using:
 
 .. code-block:: bash
 
