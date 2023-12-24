@@ -11,7 +11,11 @@ env:
 
 jobs:
   test:
-    runs-on: ubuntu-20.04
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: true
+      matrix:
+        os: [ubuntu-20.04, ubuntu-22.04]
 
     steps:
     - uses: actions/checkout@v3
