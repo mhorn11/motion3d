@@ -1,6 +1,9 @@
 # Motion3D
 
 [![Documentation Status](https://readthedocs.org/projects/motion3d/badge/?version=latest)](https://motion3d.readthedocs.io/en/latest/?badge=latest)
+[![C++ Tests](https://github.com/mhorn11/motion3d/actions/workflows/cpp_tests.yml/badge.svg?branch=main)](https://github.com/mhorn11/motion3d/actions/workflows/cpp_tests.yml)
+[![Python Tests](https://github.com/mhorn11/motion3d/actions/workflows/python_tests.yml/badge.svg?branch=main)](https://github.com/mhorn11/motion3d/actions/workflows/python_tests.yml)
+
 
 A header-only C++ library with full Python bindings for handling, converting, and storing 3D motions and poses.
 
@@ -22,15 +25,20 @@ Furthermore, the `M3DWriter` and `M3DReader` can be used to store and load trans
 
 ### Requirements
 
-| Dependency | Version  | Note              |
-|------------|----------| ----------------- |
-| CMake      | >= 3.14  |                   |
-| GCC        | >= 9.4   | C++17 is required |
-| Eigen      | >= 3.3   |                   |
-| Python     | >= 3.8   |                   |
+Supported operating systems:
+ * Ubuntu 20.04
+ * Ubuntu 22.04
 
 
-With Ubuntu 20.04, all dependencies can be installed using:
+| Dependency | Version  | Note                                  |
+|------------|----------| ------------------------------------- |
+| CMake      | >= 3.14  |                                       |
+| GCC        | >= 9.4   | C++17 is required                     |
+| Eigen      | >= 3.3   |                                       |
+| Python     | >= 3.8   | Tests are run for 3.8, 3.10, and 3.12 |
+
+
+All dependencies can be installed using:
 
 ```bash
 apt install build-essential cmake libeigen3-dev python3 python3-dev python3-pip
