@@ -3,8 +3,8 @@ name: Python Tests
 on:
   workflow_run:
     workflows: [ "C++ Tests" ]
-    types: 
-      - completed
+    types: [ completed ]
+    branches: [ "main" ]
 
 jobs:
   test:
