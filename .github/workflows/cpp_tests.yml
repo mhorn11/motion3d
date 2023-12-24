@@ -1,0 +1,33 @@
+name: C++ Tests
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test:
+
+    runs-on: ubuntu-20.04
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        lfs: 'true'
+
+    - name: Install dependencies
+      run: sudo apt install -y gcovr libeigen3-dev libgtest-dev
+
+    - name: Configure CMake
+      run: cmake -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} -DCOVERAGE=ON -DTESTS=ON -DTIDY=OFF
+
+    - name: Build
+      run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
+
+    - name: Test
+      working-directory: ${{github.workspace}}/build
+      run: ctest -C ${{env.BUILD_TYPE}}
+
+    - name: Coverage summary
+      run: gcovr --print-summary
