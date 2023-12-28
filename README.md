@@ -1,8 +1,10 @@
 # Motion3D
 
-[![Documentation Status](https://readthedocs.org/projects/motion3d/badge/?version=latest)](https://motion3d.readthedocs.io/en/latest/?badge=latest)
+[![PyPI Version](https://img.shields.io/pypi/v/motion3d?color=0f80c1)](https://pypi.org/project/motion3d)
+[![Documentation Status](https://readthedocs.org/projects/motion3d/badge/?version=latest)](https://motion3d.readthedocs.io/en/latest/?badge=latest)  
 [![C++ Tests](https://github.com/mhorn11/motion3d/actions/workflows/cpp_tests.yml/badge.svg?branch=main)](https://github.com/mhorn11/motion3d/actions/workflows/cpp_tests.yml)
 [![Python Tests](https://github.com/mhorn11/motion3d/actions/workflows/python_tests.yml/badge.svg?branch=main)](https://github.com/mhorn11/motion3d/actions/workflows/python_tests.yml)
+[![Codecov](https://codecov.io/gh/mhorn11/motion3d/graph/badge.svg?token=DXJBH2UE7R)](https://codecov.io/gh/mhorn11/motion3d)
 
 
 A header-only C++ library with full Python bindings for handling, converting, and storing 3D motions and poses.
