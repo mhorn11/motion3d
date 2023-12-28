@@ -37,7 +37,7 @@ jobs:
 
     - name: Generate coverage report
       if: matrix.os == 'ubuntu-22.04'
-      run: gcovr --exclude-unreachable-branches --print-summary --cobertura -o ${{github.workspace}}/build/coverage.xml
+      run: gcovr --exclude-unreachable-branches --print-summary --xml -o ${{github.workspace}}/build/coverage.xml
 
     - name: Upload coverage reports to Codecov
       if: matrix.os == 'ubuntu-22.04'
