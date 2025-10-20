@@ -59,6 +59,7 @@ cmake ..
 make install
 ```
 
+Since the library is header-only, nothing is built before installing the library.
 For uninstalling use `make uninstall`.
 
 
@@ -79,8 +80,39 @@ python3 -m pip install .
 If Eigen is not found on the system, the setup downloads a suitable version locally before building the package.
 
 
+### Examples
+
+After installing Motion3D either for C++ or for Python, you can find examples for both languages with additional instructions in the example directory.
+
+
 ## Documentation
 
 Fore more information about the transformation types, definitions, and the usage in C++ and Python, see the documentation at [motion3d.readthedocs.io](https://motion3d.readthedocs.io).
 
 Furthermore, the `doc` directory provides a detailed readme on how to create the documentation directly from the repository.
+
+
+## Development
+
+### C++ Unit Tests
+
+GoogleTest is required for building the C++ unit tests, which can be installed on Ubuntua via the `libgtest-dev` package.
+
+Use the following commands to build and execute the C++ unit tests:
+
+```bash
+mkdir build && cd build
+cmake -DTESTS=ON ..
+make
+./motion3d_test
+```
+
+### Python Unit Tests
+
+Pytest is required for running the Python unit tests, which can be installed as the `pytest` package available on pip.
+
+After installing the motion3d Python library (preferable locally from the cloned repository), you can run the unit tests using:
+
+```bash
+python -m pytest
+```

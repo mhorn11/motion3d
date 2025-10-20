@@ -5,9 +5,13 @@ build/
 # Installation
 .download/
 
+# C++
+Testing/
+*.gcov
+
 # Python
 dist/
-venv/
+venv*/
 __pycache__/
 *.egg
 *.egg-info/
